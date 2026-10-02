@@ -19,9 +19,6 @@
         #0b0e16;
     }
     main { width: min(1000px, 94vw); margin: 0 auto; padding: 17px 0; }
-    header { text-align: center; margin-bottom: 17px; }
-    h1 { margin: 0; font-size: clamp(1.65rem, 3.3vw, 2.55rem); letter-spacing: .04em; }
-    header p { margin: 5px 0 0; color: #c5cada; font-size: clamp(.9rem, 1.35vw, 1.08rem); }
     .cards {
       display: grid;
       grid-template-columns: repeat(4, minmax(170px, 1fr));
@@ -56,12 +53,9 @@
 </head>
 <body>
   <main>
-    <header>
-      <h1>ICT-route</h1>
-      <p>Kies jouw beroepsproject</p>
-    </header>
     <section class="cards" aria-label="Beroepsprojecten">
       <!-- Vervang alleen de # hieronder door jouw eigen link. -->
+      <article class="card future"><a href="#"><span class="image-wrap"><img src="Your Future in ICT BP00.jpg" alt="Your Future in ICT"></span><span class="name">Your Future in ICT</span></a></article>
       <article class="card sigrid"><a href="#"><span class="image-wrap"><img src="Sigrid styling BP01.jpg" alt="Sigrid Styling"></span><span class="name">Sigrid Styling</span></a></article>
       <article class="card connected"><a href="#"><span class="image-wrap"><img src="All Connected BP02.jpg" alt="All Connected"></span><span class="name">All Connected</span></a></article>
       <article class="card senr"><a href="#"><span class="image-wrap"><img src="S&amp;R Trucks BP03.jpg" alt="S&amp;R Trucks"></span><span class="name">S&amp;R Trucks</span></a></article>
@@ -69,7 +63,6 @@
       <article class="card bootup"><a href="#"><span class="image-wrap"><img src="Boot Up PVB04.jpg" alt="Boot Up"></span><span class="name">Boot Up</span></a></article>
       <article class="card firstline"><a href="#"><span class="image-wrap"><img src="First Line PVB06.jpg" alt="First Line"></span><span class="name">First Line</span></a></article>
       <article class="card bpv"><a href="#"><span class="image-wrap"><img src="BPV 7-8.jpg" alt="BPV 7-8"></span><span class="name">BPV 7-8</span></a></article>
-      <article class="card future"><a href="#"><span class="image-wrap"><img src="Your Future in ICT BP00.jpg" alt="Your Future in ICT"></span><span class="name">Your Future in ICT</span></a></article>
     </section>
   </main>
 </body>
