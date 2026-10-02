@@ -13,12 +13,14 @@
       overflow: hidden;
       font-family: Arial, Helvetica, sans-serif;
       color: #fff;
-      background:
-        radial-gradient(circle at 15% 0%, #28334c 0, transparent 34%),
-        radial-gradient(circle at 88% 100%, #202a3b 0, transparent 33%),
-        #0b0e16;
+      background: #0b0e16;
     }
-    main { width: min(1000px, 94vw); margin: 0 auto; padding: 17px 0; }
+    .bg-video { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+    body::before { content: ""; position: fixed; inset: 0; z-index: -1; background: rgba(5, 8, 15, .66); }
+    main { width: min(1000px, 94vw); margin: 0 auto; padding: 13px 0; }
+    header { height: 62px; display: flex; justify-content: space-between; align-items: center; margin: 0 4px 12px; }
+    .logo { max-height: 54px; width: auto; object-fit: contain; }
+    .slogan { color: #ff5900; font-weight: 900; font-size: clamp(1.45rem, 3vw, 2.25rem); letter-spacing: .04em; text-shadow: 0 2px 9px #000, 0 0 13px rgba(255, 89, 0, .55); }
     .cards {
       display: grid;
       grid-template-columns: repeat(4, minmax(170px, 1fr));
@@ -52,7 +54,14 @@
   </style>
 </head>
 <body>
+  <video class="bg-video" autoplay muted loop playsinline aria-hidden="true">
+    <source src="introvideoorg.mp4" type="video/mp4">
+  </video>
   <main>
+    <header>
+      <a href="https://www.ter-aa.nl/" aria-label="Naar de website van Ter AA"><img class="logo" src="ter-aa-logo(2).png" alt="Ter AA"></a>
+      <div class="slogan">Future in the making</div>
+    </header>
     <section class="cards" aria-label="Beroepsprojecten">
       <!-- Vervang alleen de # hieronder door jouw eigen link. -->
       <article class="card future"><a href="#"><span class="image-wrap"><img src="Your Future in ICT BP00.jpg" alt="Your Future in ICT"></span><span class="name">Your Future in ICT</span></a></article>
